@@ -25,8 +25,6 @@ spec:
           value: ${MYSQL_HOST}
         - name: DB_USERNAME
           value: ${MYSQL_USER}
-        - name: DB_PASSWORD
-          value: ${MYSQL_PASSWORD}
         - name: DB_DATABASE
           value: ${MYSQL_DATABASE}
         - name: CACHE_DRIVER
@@ -35,5 +33,3 @@ spec:
           value: ${REDIS_HOST}
         - name: REDIS_PORT
           value: ${REDIS_PORT}
-        - name: REDIS_PASSWORD
-          value: ${REDIS_PASSWORD}
