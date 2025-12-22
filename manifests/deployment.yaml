@@ -20,16 +20,16 @@ spec:
         - containerPort: 80
         env:
         - name: DB_DRIVER
-          value: mysql
-        - name: DB_HOST
-          value: ${MYSQL_HOST}
-        - name: DB_USERNAME
-          value: ${MYSQL_USER}
-        - name: DB_DATABASE
-          value: ${MYSQL_DATABASE}
+          value: sqlite
         - name: CACHE_DRIVER
-          value: redis
+          value: file
+        - name: MYSQL_HOST
+          value: ${MYSQL_HOST}
+        - name: MYSQL_USER
+          value: ${MYSQL_USER}
+        - name: MYSQL_DATABASE
+          value: ${MYSQL_DATABASE}
         - name: REDIS_HOST
           value: ${REDIS_HOST}
         - name: REDIS_PORT
-          value: ${REDIS_PORT}
+          value: "${REDIS_PORT}"
