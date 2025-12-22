@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: dreamfactory
-        image: ${DF_IMAGE}
+        image: dfregistry.azurecr.io/dreamfactory/df-docker:7.1.0
         ports:
         - containerPort: 80
         env:
@@ -23,13 +23,3 @@ spec:
           value: sqlite
         - name: CACHE_DRIVER
           value: file
-        - name: MYSQL_HOST
-          value: ${MYSQL_HOST}
-        - name: MYSQL_USER
-          value: ${MYSQL_USER}
-        - name: MYSQL_DATABASE
-          value: ${MYSQL_DATABASE}
-        - name: REDIS_HOST
-          value: ${REDIS_HOST}
-        - name: REDIS_PORT
-          value: "${REDIS_PORT}"
